@@ -1,158 +1,160 @@
 @media only screen and (min-width: 1440px) {
-    .LibraryStyled{
-      width: 1440px;
-      margin: 0 auto;
-    }
+  .LibraryStyled{
+    width: 1440px;
+    margin: 0 auto;
   }
-  .fullWrapper{
-    width: 100%;
-    background: #EEEEEE;
+}
+.fullWrapper{
+  width: 100%;
+  background: #EEEEEE;
+}
+.noData{
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 5rem 0;
+}
+.noDataText{
+  color: #188079;
+  font-size: 2rem;
+  text-align: center;
+}
+.LibraryContainer {
+  margin-top: 60px;
+  min-height: 100vh;
+  background: #EEEEEE;
+  padding: 60px;
+}
+
+.LibraryTitleContainer {
+  width: 16rem;
+  position: relative;
+}
+
+.LibraryTitle {
+  font-size: 3.5rem;
+  font-weight: 500;
+  color: #188079;
+  position: relative;
+  z-index: 1;
+}
+
+.LibraryTitleUnderline {
+  height: 20px;
+  width: 100%;
+  background-color: #C9E3E4;
+  border-radius: 20px;
+  position: absolute;
+  top: 2.5rem;
+}
+
+.LibraryDescriptionContainer {
+  margin: 2rem 0;
+  font-size: 1.5rem;
+}
+
+.LibraryTopDescription {
+  color: #188079;
+  margin: 0 0 1rem 0;
+}
+
+.LibrarySearchContainer {
+  padding: 0.5rem;
+  border-radius: 25px;
+  background: #FFFFFF;
+  width: 50rem;
+  min-height: 1.5rem;
+  border: 1px solid #188079;
+  display: flex;
+  align-items: center;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.LibrarySearchInput {
+  color: #188079;
+  font-size: 1.25rem;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+.LibrarySearchInput::placeholder {
+  color: #57B2AB;
+}
+
+.FilterContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0rem;
+  width: 30%;
+}
+
+.LibraryFilterSelect {
+  font-size: 1.25rem;
+  color: "#188079";
+  border-radius: 25px;
+  padding: 5px 10px;
+  outline: none;
+  border: 1px solid #188079;
+  background: #FFFFFF;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  /* appearance: none;
+  --webkit-appearance: none;
+  -moz-appearance: none;
+  background-size: 100px;
+  background-position: right; */
+}
+
+.LibraryFilterOption {
+  font-size: 1rem;
+  color: #188079;
+  border: 1px solid #188079;
+}
+
+.LibraryReviewContainer {
+  margin: 5rem 0;
+  display: flex;
+  /* min-height: 100vh; */
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.LibraryQuoteContainer {
+  margin: 10rem 0 5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #339892;
+}
+
+.LibraryQuoteText {
+  position: relative;
+  text-align: center;
+  color: #188079;
+  font-size: 2rem; 
+}
+
+.LibraryQuoteWriter {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 1000px) {
+  .LibrarySearchContainer {
+      width: 100%;
   }
-  .noData{
-    width: 100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin: 5rem 0;
+
+  .FilterContainer {
+      width: 100%;
   }
-  .noDataText{
-    color: #188079;
-    font-size: 2rem;
-    text-align: center;
+
+  .LibraryReviewContainer {
+      justify-content: center;
   }
   .LibraryContainer {
-    margin-top: 60px;
     min-height: 100vh;
     background: #EEEEEE;
-    padding: 60px;
+    margin-top: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
-  
-  .LibraryTitleContainer {
-    width: 16rem;
-    position: relative;
-  }
-  
-  .LibraryTitle {
-    font-size: 3.5rem;
-    font-weight: 500;
-    color: #188079;
-    position: relative;
-    z-index: 1;
-  }
-  
-  .LibraryTitleUnderline {
-    height: 20px;
-    width: 100%;
-    background-color: #C9E3E4;
-    border-radius: 20px;
-    position: absolute;
-    top: 2.5rem;
-  }
-  
-  .LibraryDescriptionContainer {
-    margin: 2rem 0;
-    font-size: 1.5rem;
-  }
-  
-  .LibraryTopDescription {
-    color: #188079;
-    margin: 0 0 1rem 0;
-  }
-  
-  .LibrarySearchContainer {
-    padding: 0.5rem;
-    border-radius: 25px;
-    background: #FFFFFF;
-    width: 50rem;
-    min-height: 1.5rem;
-    border: 1px solid #188079;
-    display: flex;
-    align-items: center;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  }
-  
-  .LibrarySearchInput {
-    color: #188079;
-    font-size: 1.25rem;
-    width: 100%;
-    border: none;
-    outline: none;
-  }
-  
-  .LibrarySearchInput::placeholder {
-    color: #57B2AB;
-  }
-  
-  .FilterContainer {
-    display: flex;
-    justify-content: space-between;
-    margin: 1rem 0rem;
-    width: 30%;
-  }
-  
-  .LibraryFilterSelect {
-    font-size: 1.25rem;
-    color: "#188079";
-    border-radius: 25px;
-    padding: 5px 10px;
-    outline: none;
-    border: 1px solid #188079;
-    background: #FFFFFF;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-    /* appearance: none;
-    --webkit-appearance: none;
-    -moz-appearance: none;
-    background-size: 100px;
-    background-position: right; */
-  }
-  
-  .LibraryFilterOption {
-    font-size: 1rem;
-    color: #188079;
-    border: 1px solid #188079;
-  }
-  
-  .LibraryReviewContainer {
-    margin: 5rem 0;
-    display: flex;
-    /* min-height: 100vh; */
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  
-  .LibraryQuoteContainer {
-    margin: 10rem 0 5rem 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #339892;
-  }
-  
-  .LibraryQuoteText {
-    position: relative;
-    text-align: center;
-    color: #188079;
-    font-size: 2rem; 
-  }
-  
-  .LibraryQuoteWriter {
-    font-size: 1.5rem;
-  }
-  
-  @media (max-width: 1000px) {
-    .LibrarySearchContainer {
-        width: 100%;
-    }
-  
-    .FilterContainer {
-        width: 100%;
-    }
-  
-    .LibraryReviewContainer {
-        justify-content: center;
-    }
-    .LibraryContainer {
-      min-height: 100vh;
-      background: #EEEEEE;
-      padding: 0px 20px;
-    }
-  }
+}
