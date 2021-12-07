@@ -10,7 +10,6 @@ let firebase;
 
 try{
    firebase =  getApps().length != 0 ? getApp() : initializeApp(configFile);
-    console.log("initialized")
 }catch(Err){
     console.log(Err);
 }

@@ -1,4 +1,5 @@
 import style from "../../styles/Footer.module.css"
+import Link from "next/link";
 const Footer = () => {
     return ( 
         <>
@@ -7,9 +8,15 @@ const Footer = () => {
                     <h2 className={style.FooterTitle}>A place where you can...</h2>
                     <hr className={style.FooterLine} />
                     <div className={style.FooterLinkContainer}>
-                        <a className={style.FooterLink} href="/">Home</a>
-                        <a className={style.FooterLink} href="/">Library</a>
-                        <a className={style.FooterLink} href="/">About</a>
+                        <Link href="/">
+                            <a className={style.FooterLink} >Home</a>
+                        </Link>
+                        <Link href="/library">
+                            <a className={style.FooterLink} >Library</a>
+                        </Link>
+                        <Link href="/about">
+                            <a className={style.FooterLink} >About</a>
+                        </Link>
                     </div>
                     <div className={style.FooterSocialContainer}>
                         <div className={style.FooterSocial}>
