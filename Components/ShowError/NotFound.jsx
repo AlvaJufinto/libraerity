@@ -1,7 +1,6 @@
 import Navbar from "../newNavbar/Navbar";
 import Footer from "../footer/Footer";
 import style from "../../styles/NotFound.module.css";
-// import "./NotFound.css";
 
 const NotFound = ({title,MessageTitle,pathBack}) => {
     return ( 

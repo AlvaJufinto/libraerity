@@ -1,10 +1,10 @@
 import NavbarProfile from "../navbarProfile/NavbarProfile";
-// import Review from '../../components/Review/Review';
+
 import Footer from "../footer/Footer";
 import style from "../../styles/NewProfile.module.css";
 import Link from "next/link";
 import Review from "./profileCard/ProfileReview"
-// import Avatar from "../../img/avatar/1.png";
+
 
 function DisplayCardPost({data,owner}){
     if(data == false){

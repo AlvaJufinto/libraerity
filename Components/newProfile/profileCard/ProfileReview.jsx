@@ -1,8 +1,8 @@
-// import { useState } from "react";
-import style from "../../../styles/Review.module.css"
-// import Avatar from "../../img/avatar/1.png"; 
+
+import style from "../../../styles/ReviewPerson.module.css"
+
 import Link from "next/link"
-// import "./Review.css";
+
 
 const Review = ({ dataDocument,owner}) => {
     return (  

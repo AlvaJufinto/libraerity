@@ -84,16 +84,6 @@ const Library = ({loopData,dataCreator}) => {
                             <LoopData displayData={toBeDisplayed} query={searchBar} owner={dataCreator}/>
                             <div className={style.LibraryReviewContainer}>
                             </div>
-                                {/* {
-                                    toBeDisplayed.filter((e) => e.post.postTitle.includes(searchBar) 
-                                    || e.post.mediaSource.includes(searchBar)
-                                    || e.post.mediaAuthor.includes(searchBar)).map((val)=>{
-                                        return <Review dataDocument={val} key={val.id} owner={val.id} />
-                                    })
-                                } */}
-                                {/* <Review isUserReview={true} />
-                                <Review isUserReview={true} />
-                                <Review isUserReview={true} /> */}
                             <div className={style.LibraryQuoteContainer}>
                                 <div className={style.LibraryQuoteText}>
                                     <i 

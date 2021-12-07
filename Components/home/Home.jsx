@@ -5,8 +5,6 @@ import Footer from "../../Components/footer/Footer";
 
 import Link from "next/link"
 
-// import "./Home.css";
-
 const HomePage = () => {
     return ( 
         <>

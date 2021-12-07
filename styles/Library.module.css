@@ -20,6 +20,7 @@
     text-align: center;
   }
   .LibraryContainer {
+    margin-top: 60px;
     min-height: 100vh;
     background: #EEEEEE;
     padding: 60px;

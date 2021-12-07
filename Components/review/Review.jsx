@@ -1,8 +1,8 @@
-// import { useState } from "react";
+
 import style from "../../styles/Review.module.css"
-// import Avatar from "../../img/avatar/1.png"; 
+
 import Link from "next/link"
-// import "./Review.css";
+
 
 const Review = ({ dataDocument,owner }) => {
     return (  
@@ -14,7 +14,6 @@ const Review = ({ dataDocument,owner }) => {
                         <p className={style.ReviewSourceTitle}>{dataDocument.post.sourceTitle}</p>
                         <p className={style.ReviewSourceAuthor}>{dataDocument.post.mediaAuthor}</p>
                         <br />
-                        {/* <span className={style.ReviewCategory}>{dataDocument.post.category}</span> */}
                     </div>
                     <div className={style.BottomReview} style={{
                         borderBottom : "1px solid #188079"

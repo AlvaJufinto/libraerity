@@ -50,14 +50,6 @@ const LibraryViewReview = ({data}) => {
                                         Here
                                     </a>
                             </div>
-                            {/* <div className={style.LibraryViewReviewMaker}>
-                                A post by &nbsp;
-                                <Link href={`/people/${owner.id}`}>
-                                    <a style={{color : "#57B2AB"}}>
-                                        {owner.data.username}
-                                    </a>
-                                </Link>
-                            </div> */}
                         </div>
                     </div>
                 </div>

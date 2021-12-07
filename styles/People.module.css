@@ -5,6 +5,7 @@
     min-height: 100vh;
     background: #EEEEEE;
     padding: 60px;
+    margin-top: 60px;
   }
   @media (min-width:1440px){
     .PeopleContainer {

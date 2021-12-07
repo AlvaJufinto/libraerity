@@ -1,0 +1,202 @@
+.NavbarStyled {
+    padding: 0px 10rem;
+    position: sticky;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    padding: 0px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0B2934;
+    color: #FFFFFF;
+}
+
+.NavbarTitle {
+    font-size: 25px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.NavbarLogo {
+    height: 30px;
+    padding: 0px 10px 0px 0px;
+}
+
+.NavbarCenter {
+    display: flex;
+    color: #FFFFFF;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+
+.NavbarRight {
+    margin: 0px 0px 0px 20px;
+    max-width: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.NavbarLinkContainer {
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+}
+
+.NavbarLink {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.ProfilePictureContainer {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.ProfilePictureImg {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.fa-caret-down {
+    margin: 0px 0px 0px 10px;
+}
+
+.ProfileOptions {
+    width: 200px;
+    z-index: 99;
+    position: absolute;
+    top: 60px;
+    right: 0px;
+    display: none;
+    flex-direction: column;
+    background: #FFFFFF;
+    padding: 15px 15px;
+    border: 1px solid #339892;
+    border-radius: 10px;
+}
+
+.ProfileOptions.isExtended {
+    top: -15px;
+    left: 70px;
+    z-index: 99;
+}
+
+.ProfileOptions.isVisible {
+    display: flex;
+}
+
+.NavbarMenubar {
+    display: none !important;
+}
+
+.NavbarExtended {
+    height: 100vh;
+    width: 100%;
+    transition: all 1s ease-out;
+    position: fixed;
+    z-index: 4;
+    background-color: #0B2934;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 2rem;
+    clip-path: circle(100px at 100% -20%);
+}
+
+.NavbarExtended.isExtended {
+    clip-path: circle(1200px at 100% -20%);
+    pointer-events: all;
+}
+
+
+@media (max-width: 1000px) {
+    .NavbarStyled {
+        padding: 0px 20px;
+    }
+
+    .NavbarCenter {
+        display: none;
+    }
+
+    .NavbarRight {
+        display: none;
+    }
+
+    .ProfileOptions {
+        display: none;
+    }
+
+    .NavbarExtended {
+        display: flex;
+    }
+
+    .NavbarMenubar {
+        height: 30%;
+        display: flex !important;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .NavbarMenubar.isExtended {
+        transform: translate(0px, -5px);
+    }
+
+    .NavbarMenubar div {
+        height: 3px;
+        width: 20px;
+        background: white;
+        transition: all 0.5s ease;
+    }
+
+    .NavbarMenubar1.isExtended {
+        transform: rotate(45deg) translate(10px, 10px);
+    }
+
+    .NavbarMenubar2.isExtended {
+        opacity: 0;
+    }
+
+    .NavbarMenubar3.isExtended {
+        transform: rotate(130deg) translate(0px, 0px);
+    }
+
+    .NavbarLink {
+        opacity: 0;
+    }
+
+    .NavbarLink:nth-child(1) {
+        transition: all 0.5s ease 0.2s;
+    }
+
+    .NavbarLink:nth-child(2) {
+        transition: all 0.5s ease 0.4s;
+    }
+
+    .NavbarLink:nth-child(3) {
+        transition: all 0.5s ease 0.6s;
+    }
+
+    .NavbarLink:nth-child(4) {
+        transition: all 0.5s ease 0.8s;
+    }
+
+    .NavbarLink.isExtended {
+        opacity: 1;
+    }
+
+
+}

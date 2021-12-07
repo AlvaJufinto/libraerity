@@ -37,6 +37,7 @@ a {
 }
 /* HOME */
 .HomeContainer {
+  margin-top: 60px;
   min-height: 100vh;
 }
 
@@ -313,7 +314,7 @@ a {
 /* NAVBAR */
 .NavbarStyled {
   padding: 0px 10rem;
-  position: sticky;
+  position: fixed;
   z-index: 5;
   top: 0;
   left: 0;
@@ -427,11 +428,15 @@ a {
   align-items: center;
   font-size: 2rem;
   clip-path: circle(0px at 100% -20%);
+  height: 100%;
+  padding-bottom: 60px;
 }
 
 .NavbarExtended.isExtended {
   clip-path: circle(1200px at 100% -20%);
   pointer-events: all;
+  width: 100%;
+  height: 100%;
 }
 
 
@@ -515,17 +520,11 @@ a {
 }
 /* NAVBAR */
 
-/* NAVBAR PROFILE */
 
-
-
-/* People */
-/* People */
-
-/* Person */
 
 /* DB DOWN */
 .DatabaseDownContainer {
+  margin-top: 60px;
   height: 100vh;
   display: flex;
   flex-direction: column;
