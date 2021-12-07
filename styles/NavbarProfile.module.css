@@ -1,0 +1,59 @@
+.NavbarProfileStyled {
+    padding: 0px 10rem;
+    position: sticky;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0B2934;
+    color: #FFFFFF;
+  }
+  .NavbarProfileGoBackContainer {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+  
+  .fa-chevron-left {
+    margin: 0px 20px 0px 0px;
+  }
+  
+  .NavbarProfileTitle {
+    font-size: 1.5rem;
+  }
+  
+  .NavbarProfileTitle.Right {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  
+  @media (max-width: 1000px) {
+    .NavbarProfileTitle.Center {
+        opacity: 0;
+        pointer-events: none;
+    }
+  
+    .NavbarProfileTitle.Right {
+        opacity: 1;
+        pointer-events: all;
+    }
+  }
+  @media (max-width: 359px) {
+    .NavbarProfileGoBackContainer {
+        font-size: 1.2rem;
+        text-decoration: none;
+        color: #FFFFFF;
+      }
+      .NavbarProfileTitle.Left {
+        font-size: 1.2rem;
+      }
+      .NavbarProfileTitle.Right {
+        font-size: 1.2rem;
+      }
+  }

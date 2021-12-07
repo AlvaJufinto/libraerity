@@ -1,0 +1,65 @@
+.PersonStyled {
+    height: 420px;
+    width: 270px;
+    overflow: hidden;
+    border: 1px solid #EEEEEE;
+    background: #FFFFFF;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* margin: 0 auto; */
+    transition: .5s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  }
+  @media (max-width:599px) {
+    .PersonStyled{
+      margin: 0 auto;
+    }
+  }
+  .PersonStyled:hover{
+    transition: .5s;
+    transform: scale(1.1);
+  }
+  
+  .TopPersonImageContainer {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .TopPersonImage {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    border: 5px solid #339892;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .CenterPerson {
+    padding: 0 0 20px 0;
+  }
+  
+  .PersonUsername {
+    margin: 0 0 10px 0px;
+    width: 100%;
+    font-size: 1.1rem;
+  }
+  
+  .PersonReviewCount {
+    color: #57B2AB;
+  }
+  
+  .PersonDescription {
+    font-size: 1rem;
+    color: #188079;
+    padding: 20px 20px 0 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }

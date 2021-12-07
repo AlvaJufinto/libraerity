@@ -1,16 +1,582 @@
-html,
-body {
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+* {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  box-sizing: border-box;
+  font-family: 'Varela Round', sans-serif;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #EEEEEE;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0b5550;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #083d3a;
+}
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 a {
   color: inherit;
   text-decoration: none;
 }
+/* HOME */
+.HomeContainer {
+  min-height: 100vh;
+}
 
-* {
-  box-sizing: border-box;
+.HomeJumbotron {
+  padding: 0px 60px;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100vw 600px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.HomeJumbotronLeft {
+  width: 200%;
+}
+
+.HomeJumbotronTitle {
+  font-size: 3rem;
+  color: #0B2934;
+  margin: 15% 0 0 0;
+}
+
+.HomeJumbbotronDescription {
+  font-size: 2rem;
+  color: #188079;
+  width: 90%;
+  margin: 20px 0px;
+}
+
+.HomeJumbotronIllustration {
+  margin: 5vw 0 0 0;
+  height: 400px;
+}
+
+.HomeJumbotronButton {
+  outline: none;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 15px;
+  font-size: 1.6rem;
+  color: white;
+  background-color: #339892;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.HomeJumbotronButton:hover {
+  background-color: #22bdb2;
+}
+
+.HomeFeatures {
+  /* background: red; */
+  padding: 40px 60px;
+}
+
+.HomeFeaturesTitle {
+  font-size: 4rem;
+  color: #0B2934;
+  margin: 80px 0px;
+  text-align: center;
+}
+
+.HomeFeaturesContent {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.HomeFeatureContent {
+  /* background: orange; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20vw;
+}
+
+.HomeFeatureContentRight {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20vw;
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.HomeFeaturesContentIllustration {
+  width: 400px;
+}
+
+.HomeFeaturesContentDescription {
+  width: 400px;
+}
+
+.HomeFeaturesContentDescriptionTop {
+  margin: 0 0 20px 0;
+  color: #0B2934;
+  font-size: 2.5rem;
+}
+
+.HomeFeaturesContentDescriptionBottom {
+  color: #188079;
+  font-size: 2rem;
+}
+
+.HomeStartJourney {
+  height: 550px;
+  margin: 200px 0 0 0;
+  position: relative;
+}
+
+.HomeStartJourneyMountain,
+.HomeStartJourneyPlane {
+  position: absolute;
+  pointer-events: none;
+  opacity: 0.9;
+}
+
+.HomeStartJourneyMountain {
+  bottom: -20px;
+  left: 0px;
+}
+
+.HomeStartJourneyPlane {
+  top: 0;
+  right: 0;
+}
+
+.HomeStartJourneyPlane svg {
+  width: 20vw;
+}
+
+.HomeStartJourneyDescriptionContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+
+.HomeStartJourneyTitle {
+  font-size: 2.5rem;
+}
+
+.HomeStartJourneyButton {
+  font-size: 2rem;
+  padding: 10px 30px;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  background: #188079;
+  color: white;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.HomeStartJourneyButton:hover {
+  background-color: #22bdb2;
+}
+
+@media (max-width: 767px) {
+
+  .HomeFeatureContent,
+  .HomeFeatureContentRight {
+      flex-direction: column;
+      text-align: center;
+      gap: 0px;
+  }
+
+  .HomeFeaturesContentIllustration {
+      width: 100%;
+  }
+
+  .HomeFeaturesContentDescription {
+      width: 100%;
+  }
+
+  .HomeStartJourney {
+      height: 500px;
+  }
+
+}
+
+@media (max-width: 1000px) {
+  .HomeJumbotron {
+      flex-direction: column-reverse;
+      align-items: center;
+      text-align: center;
+      height: 1200px;
+      background-size: 100rem 1200px;
+      justify-content: center;
+      padding: 0 10px 30% 10px;
+  }
+
+  .HomeJumbotronTitle {
+      margin: 10% 0 0 0;
+  }
+
+  .HomeJumbotronLeft {
+      width: 90%;
+  }
+
+  .HomeJumbbotronDescription {
+      font-size: 2rem;
+      color: #188079;
+      width: 100%;
+  }
+
+  .HomeJumbotronIllustration {
+      margin: 0% 0 0 0;
+      width: 100%;
+  }
+
+  .HomeFeatures {
+      width: 100%;
+  }
+
+  .HomeStartJourneyDescriptionContainer {
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      text-align: center;
+  }
+
+  .HomeStartJourney {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .HomeStartJourneyPlane {
+      display: none;
+  }
+
+  .HomeStartJourneyMountain {
+      position: static;
+      /* height: 40%; */
+      /* width: 10%; */
+      top: 0;
+      /* display: none; */
+  }
+
+  .HomeStartJourneyMountain svg{
+      /* position: static; */
+      height: 100%;
+      width: 100%;
+      /* top: 0; */
+      /* display: none; */
+  }
+
+
+}
+
+@media (min-width: 1440px) {
+
+  .HomeJumbotron {
+      padding: 0px 200px;
+      height: 900px;
+      background-size: 100vw 900px;
+  }
+
+  .HomeJumbotronTitle {
+      font-size: 3rem;
+      color: #0B2934;
+      margin: 20% 0 0 0;
+  }
+}
+/* HOME */
+
+
+
+
+/* NAVBAR */
+.NavbarStyled {
+  padding: 0px 10rem;
+  position: sticky;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  padding: 0px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0B2934;
+  color: #FFFFFF;
+}
+
+.NavbarTitle {
+  font-size: 25px;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.NavbarLogo {
+  height: 30px;
+  padding: 0px 10px 0px 0px;
+}
+
+.NavbarCenter {
+  display: flex;
+  color: #FFFFFF;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 20px;
+}
+
+
+.NavbarRight {
+  margin: 0px 0px 0px 20px;
+  max-width: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.NavbarLinkContainer {
+  display: flex;
+  width: 500px;
+  justify-content: space-between;
+}
+
+.NavbarLink {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.ProfilePictureContainer {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.ProfilePictureImg {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.fa-caret-down {
+  margin: 0px 0px 0px 10px;
+}
+
+.ProfileOptions {
+  width: 200px;
+  z-index: 99;
+  position: absolute;
+  top: 60px;
+  right: 0px;
+  display: none;
+  flex-direction: column;
+  background: #FFFFFF;
+  padding: 15px 15px;
+  border: 1px solid #339892;
+  border-radius: 10px;
+}
+
+.ProfileOptions.isExtended {
+  top: -15px;
+  left: 70px;
+  z-index: 99;
+}
+
+.ProfileOptions.isVisible {
+  display: flex;
+}
+
+.NavbarMenubar {
+  display: none !important;
+}
+
+.NavbarExtended {
+  height: calc(100vh - 60px);
+  width: 100%;
+  transition: all 1s ease-out;
+  position: fixed;
+  z-index: 4;
+  background-color: #0B2934;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 2rem;
+  clip-path: circle(0px at 100% -20%);
+}
+
+.NavbarExtended.isExtended {
+  clip-path: circle(1200px at 100% -20%);
+  pointer-events: all;
+}
+
+
+@media (max-width: 1000px) {
+  .NavbarStyled {
+      padding: 0px 20px;
+  }
+
+  .NavbarCenter {
+      display: none;
+  }
+
+  .NavbarRight {
+      display: none;
+  }
+
+  .ProfileOptions {
+      display: none;
+  }
+
+  .NavbarExtended {
+      display: flex;
+  }
+
+  .NavbarMenubar {
+      height: 30%;
+      display: flex !important;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .NavbarMenubar.isExtended {
+      transform: translate(0px, -5px);
+  }
+
+  .NavbarMenubar div {
+      height: 3px;
+      width: 20px;
+      background: white;
+      transition: all 0.5s ease;
+  }
+
+  .NavbarMenubar1.isExtended {
+      transform: rotate(45deg) translate(10px, 10px);
+  }
+
+  .NavbarMenubar2.isExtended {
+      opacity: 0;
+  }
+
+  .NavbarMenubar3.isExtended {
+      transform: rotate(130deg) translate(0px, 0px);
+  }
+
+  .NavbarLink {
+      opacity: 0;
+  }
+
+  .NavbarLink:nth-child(1) {
+      transition: all 0.5s ease 0.2s;
+  }
+
+  .NavbarLink:nth-child(2) {
+      transition: all 0.5s ease 0.4s;
+  }
+
+  .NavbarLink:nth-child(3) {
+      transition: all 0.5s ease 0.6s;
+  }
+
+  .NavbarLink:nth-child(4) {
+      transition: all 0.5s ease 0.8s;
+  }
+
+  .NavbarLink.isExtended {
+      opacity: 1;
+  }
+
+
+}
+/* NAVBAR */
+
+/* NAVBAR PROFILE */
+
+
+
+/* People */
+/* People */
+
+/* Person */
+
+/* DB DOWN */
+.DatabaseDownContainer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.DatabaseDownIllustration {
+  width: 100%;
+  height: 40%;
+}
+
+.DatabaseDown500 {
+  color: #0B2934;
+  margin: 10px 0px;
+  font-size: 3rem;
+}
+
+.DatabaseDownLostMessage {
+  font-size: 2rem;
+  color: #188079;
+}
+
+.DatabaseDownGoBackMessage {
+  font-size: 1.5rem;
+  color: #339892;
+}
+
+.DatabaseDownGoBackButton {
+  font-size: 1.5rem;
+  margin: 20px 0px;
+  padding: 10px 15px;
+  outline: none;
+  border: none;
+  background-color: #57B2AB;
+  color: white;
+  border-radius: 25px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.DatabaseDownGoBackButton:hover {
+  background-color: #2bb6aa;
+}
+
+@media (max-width: 1000px) {
+  .DatabaseDownContainer {
+      padding: 50px 0px;
+  }
+
+  .DatabaseDownIllustration {
+      width: 90%;
+  }
 }

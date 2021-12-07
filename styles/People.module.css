@@ -1,0 +1,130 @@
+.PeopleStyled{
+    background: #EEEEEE;
+  }
+  .PeopleContainer {
+    min-height: 100vh;
+    background: #EEEEEE;
+    padding: 60px;
+  }
+  @media (min-width:1440px){
+    .PeopleContainer {
+      min-height: 100vh;
+      width: 1300px;
+      /* background: yellow; */
+      margin: 0 auto;
+      padding: 20px;
+    } 
+  }
+  .PeopleTitleContainer {
+    width: 16rem;
+    position: relative;
+  }
+  
+  .PeopleTitle {
+    font-size: 3.5rem;
+    font-weight: 500;
+    color: #188079;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .PeopleTitleUnderline {
+    height: 20px;
+    width: 100%;
+    background-color: #C9E3E4;
+    border-radius: 20px;
+    position: absolute;
+    top: 2.5rem;
+  }
+  
+  .PeopleDescriptionContainer {
+    margin: 2rem 0;
+    font-size: 1.5rem;
+  }
+  
+  .PeopleTopDescription {
+    color: #188079;
+    margin: 0 0 1rem 0;
+  }
+  
+  .PeopleSearchContainer {
+    padding: 0.5rem;
+    border-radius: 25px;
+    background: #FFFFFF;
+    width: 50rem;
+    min-height: 1.5rem;
+    border: 1px solid #188079;
+    display: flex;
+    align-items: center;
+  }
+  
+  .PeopleSearchInput {
+    color: #188079;
+    font-size: 1.25rem;
+    width: 100%;
+    border: none;
+    outline: none;
+  }
+  
+  .PeopleSearchInput::placeholder {
+    color: #57B2AB;
+  }
+  
+  .PeopleProfileContainer {
+    margin: 5rem 0;
+    display: flex;
+    /* min-height: 100vh; */
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .PeopleQuoteContainer {
+    margin: 10rem 0 5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #339892;
+  }
+  
+  .PeopleQuoteText {
+    position: relative;
+    text-align: center;
+    color: #188079;
+    width: 50%;
+    font-size: 1.5rem;
+  }
+  
+  .PeopleQuoteWriter {
+    font-size: 1.25rem;
+  }
+  .Nodatawrap{
+      width: 100%;
+      height: 300px;
+  }
+  .NodataText{
+      text-align: center;
+      color: #188079;
+      font-size: 2.1rem;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+  }
+  @media (max-width: 1000px) {
+    .PeopleContainer {
+        min-height: 100vh;
+        padding: 60px 20px;
+        justify-content: center;
+    }
+  
+    .PeopleSearchContainer {
+        width: 100%;
+    }
+  
+    .FilterContainer {
+        width: 100%;
+    }
+  
+    .PeopleReviewContainer {
+        justify-content: center;
+    }
+  }

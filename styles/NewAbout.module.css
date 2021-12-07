@@ -1,0 +1,203 @@
+.AboutUsContainer {
+    min-height: 100vh;
+    padding: 80px 0px;
+    /* background: red; */
+    position: relative;
+    overflow: hidden;
+}
+
+.AboutUsBlobLeft {
+    position: absolute;
+    top: -10px;
+}
+
+.AboutUsBlobRight {
+    position: absolute;
+    right: -5%;
+    top: 0px;
+    z-index: -1;
+}
+
+.AboutUsTeamIllustration {
+    position: absolute;
+    right: 2%;
+    top: 100px;
+}
+
+.AboutUsTeamContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background: orange; */
+}
+
+.AboutUsTitleContainer {
+    width: 19rem;
+    position: relative;
+    margin: 80px 0px 0px 0px;
+}
+
+.AboutUsTitle {
+    font-size: 4rem;
+    font-weight: 500;
+    color: #188079;
+    position: relative;
+    z-index: 1;
+}
+
+.AboutUsTitleUnderline {
+    height: 20px;
+    width: 100%;
+    background-color: #9ce7af;
+    border-radius: 20px;
+    position: absolute;
+    top: 3rem;
+}
+
+.AboutUsTeam {
+    /* background: red; */
+    margin: 200px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
+    gap: 50px;
+}
+
+/* .AboutUsTeamImage.Syafiq {
+    height: 90%;
+    width: 400px;
+} */
+
+.AboutUsTeamIdentity {
+    width: 45vw;
+    /* background: orange; */
+}
+
+.AboutUsTeamIdentityTitleContainer {
+    width: auto;
+    position: relative;
+    margin: 20px 0px;
+}
+
+.AboutUsTeamIdentityTitle {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #0B2934;
+    position: relative;
+    z-index: 1;
+    text-decoration: underline;
+    text-decoration-thickness: 13px;
+    text-decoration-color: #57B2AB;
+    text-underline-offset: -9px;
+    text-decoration-skip-ink: none;
+}
+
+.AboutUsTeamIdentityUnderline {
+    height: 20px;
+    width: 100%;
+    background-color: #C9E3E4;
+    border-radius: 20px;
+    position: absolute;
+    top: 1.7rem;
+}
+
+/* .AboutUsTeamIdentityUnderline.Syafiq {
+    width: 33rem;
+}
+
+.AboutUsTeamIdentityUnderline.Alva {
+    width: 28rem;
+}
+
+.AboutUsTeamIdentityUnderline.Najmi {
+    width: 8rem;
+} */
+
+.AboutUsTeamIdentityDescription {
+    font-size: 1.5rem;
+}
+
+.AboutUsInsitutionContainer {
+    padding: 0px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.smkn26Image {
+    margin: 50px 0px;
+}
+
+.AboutUsInsitutionDescription {
+    display: flex;
+    gap: 100px;
+}
+
+.AboutUsInsitutionLeft {
+    height: 200px;
+    width: 450px;
+}
+
+.AboutUsInstitutionRight {
+    border-radius: 10px;
+    overflow: hidden;
+    height: 400px;
+    width: 400px;
+    border: 10px solid #C9E3E4;
+}
+
+.AboutUsInsitutionLeftTitle {
+    font-size: 2rem;
+    color: #188079;
+    margin: 20px 0px;
+}
+
+@media (max-width: 936px) {
+    .AboutUsBlobLeft {
+        display: none;
+    }
+
+    .AboutUsTeam {
+        margin: 50px 0px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .AboutUsTeamIllustration {
+        display: none;
+    }
+
+    .AboutUsTeam {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .AboutUsTeamImage {
+        height: 300px;
+    }
+
+    .AboutUsTeamIdentity {
+        width: 90vw;
+    }
+
+    .AboutUsInsitutionContainer {
+        padding: 0px 20px;
+    }
+
+    .AboutUsInsitutionDescription {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .AboutUsInsitutionLeft {
+        height: 100%;
+        width: 100%;
+        margin: 0px 0px 50px 0px;
+    }
+    
+    .AboutUsInstitutionRight {
+        width: 100%;
+    }
+}
