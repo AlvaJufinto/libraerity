@@ -19,30 +19,32 @@ const Navbar = () => {
     return (
         <>
             <div className="NavbarStyled">
-                <a className='NavbarTitle' href="/">
-                    <img className="NavbarLogo" src="/Assets/logo/logo.ico"></img>
-                    Libraerity
-                </a>
+                <Link href="/">
+                    <a className='NavbarTitle' >
+                        <img className="NavbarLogo" src="/Assets/logo/logo.ico"></img>
+                        Libraerity
+                    </a>
+                </Link>
                 <div className='NavbarCenter'>
                     <div className="NavbarLinkContainer">
                         <Link href="/">
                             <a className="NavbarLink" >
-                                home
+                                Home
                             </a>
                         </Link>
                         <Link href="/library">
                             <a className="NavbarLink" >
-                                library
+                                Library
                             </a>
                         </Link>
                         <Link href="/people">
                             <a className="NavbarLink" >
-                                people
+                                People
                             </a>
                         </Link>
                         <Link href="/about">
                             <a className="NavbarLink" >
-                                about
+                                About
                             </a>
                         </Link>
                     </div>
