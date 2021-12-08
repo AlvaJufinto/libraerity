@@ -1,0 +1,57 @@
+.DatabaseDownContainer {
+    margin-top: 60px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .DatabaseDownIllustration {
+    width: 100%;
+    height: 40%;
+  }
+  
+  .DatabaseDown500 {
+    color: #0B2934;
+    margin: 10px 0px;
+    font-size: 3rem;
+  }
+  
+  .DatabaseDownLostMessage {
+    font-size: 2rem;
+    color: #188079;
+  }
+  
+  .DatabaseDownGoBackMessage {
+    font-size: 1.5rem;
+    color: #339892;
+  }
+  
+  .DatabaseDownGoBackButton {
+    font-size: 1.5rem;
+    margin: 20px 0px;
+    padding: 10px 15px;
+    outline: none;
+    border: none;
+    background-color: #57B2AB;
+    color: white;
+    border-radius: 25px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+  }
+  
+  .DatabaseDownGoBackButton:hover {
+    background-color: #2bb6aa;
+  }
+  
+  @media (max-width: 1000px) {
+    .DatabaseDownContainer {
+        padding: 50px 0px;
+    }
+  
+    .DatabaseDownIllustration {
+        width: 90%;
+    }
+  }
