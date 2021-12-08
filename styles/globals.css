@@ -81,9 +81,10 @@ a {
 .HomeJumbotronButton {
   outline: none;
   border: none;
-  border-radius: 25px;
-  padding: 10px 15px;
-  font-size: 1.6rem;
+  border-radius: 30px;
+  padding: 15px 32px;
+  font-size: 1.25rem;
+  margin: 10px 0px;
   color: white;
   background-color: #339892;
   cursor: pointer;
