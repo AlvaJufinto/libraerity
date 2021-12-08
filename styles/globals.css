@@ -183,8 +183,9 @@ a {
 }
 
 .HomeStartJourneyButton {
-  font-size: 1.5rem;
-  padding: 10px 30px;
+  margin: 10px 0px;
+  font-size: 1.25rem;
+  padding: 16px 32px;
   border: none;
   outline: none;
   border-radius: 30px;
