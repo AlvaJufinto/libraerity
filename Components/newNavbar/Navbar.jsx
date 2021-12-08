@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 // import Avatar from "../../img/avatar/1.png";
 // import Logo from "../../img/logo/logo.ico";
 import Link from "next/link"
+
 const Navbar = () => {
     const [isVisible, setIsVisible] = useState(false);
     const [isExtended, setIsExtended] = useState(false);
@@ -14,7 +15,6 @@ const Navbar = () => {
             setIsExtended(true)
         }
     }, [isVisible, isExtended]);
-
 
     return (
         <>
