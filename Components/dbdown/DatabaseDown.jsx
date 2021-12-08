@@ -1,14 +1,14 @@
 import Navbar from "../../Components/newNavbar/Navbar";
 import Footer from "../../Components/footer/Footer";
-
+import style from "../../styles/DbDown.module.css";
 // import "./DatabaseDown.css";
 
 const DatabaseDown = () => {
     return ( 
         <> 
             <Navbar />  
-            <div className="DatabaseDownContainer">
-                <svg className="DatabaseDownIllustration" width="919" height="574" viewBox="0 0 919 574" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div className={style.DatabaseDownContainer}>
+                <svg className={style.DatabaseDownIllustration} width="919" height="574" viewBox="0 0 919 574" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M240.181 349.82C336.74 349.82 415.016 271.51 415.016 174.91C415.016 78.3098 336.74 0 240.181 0C143.622 0 65.3457 78.3098 65.3457 174.91C65.3457 271.51 143.622 349.82 240.181 349.82Z" fill="#C9E3E4"/>
 <path d="M0 41.9968C0 105.636 39.9068 157.132 89.224 157.132Z" fill="#2F2E41"/>
 <path d="M89.2246 157.132C89.2246 92.7777 133.758 40.7031 188.793 40.7031Z" fill="#57B2AB"/>
@@ -61,11 +61,11 @@ const DatabaseDown = () => {
 <path d="M297.637 460.678C297.637 467.027 281.296 479.565 263.163 479.565C245.029 479.565 227.867 467.848 227.867 461.499C227.867 455.15 245.029 456.572 263.163 456.572C281.296 456.572 297.637 454.329 297.637 460.678Z" fill="white"/>
                 </svg>
         
-                <h2 className="DatabaseDown500">500</h2>
-                <p className="DatabaseDownLostMessage">Our database is currently off.</p>
-                <div className="DatabaseDownGoBackMessage">You can wait on the homepage with this button.</div>
+                <h2 className={style.DatabaseDown500}>500</h2>
+                <p className={style.DatabaseDownLostMessage}>Our database is currently off.</p>
+                <div className={style.DatabaseDownGoBackMessage}>You can wait on the homepage with this button.</div>
                 <a href="/">
-                    <button className="DatabaseDownGoBackButton">Go Back</button>
+                    <button className={style.DatabaseDownGoBackButton}>Go Back</button>
                 </a>
             </div>
             <Footer />
