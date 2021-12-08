@@ -237,4 +237,16 @@
         padding-left: 10px;
         padding-right: 10px;
     }
+    .ProfileUsername {
+        font-size: 1.6rem;
+    }
+    .ProfileDescription {
+        font-size: 1.2rem;
+    }
+    .ProfileReviewCount {
+        font-size: 1.4rem;
+    }
+    .webLink{
+        font-size: 1.2rem;
+    }
 }

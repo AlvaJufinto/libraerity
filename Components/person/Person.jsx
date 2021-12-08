@@ -14,7 +14,7 @@ const Person = ({each}) => {
                             <p className={style.PersonUsername}>{each.data.username}</p>
                             <p className={style.PersonReviewCount}>{each.data.post.length <=1 ? `${each.data.post.length} Review` : `${each.data.post.length} Reviews`}</p>
                             <p className={style.PersonDescription}>
-                                {each.data.description.length <= 58 ? each.data.description : `${each.data.description.slice(0,58)}...`}
+                                {each.data.description.length <= 58 ? each.data.description : `${each.data.description.slice(0,55)}...`}
                             </p>
                         </div>
                         </a>
